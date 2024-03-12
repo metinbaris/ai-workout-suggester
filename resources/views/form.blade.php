@@ -45,7 +45,6 @@
                         </ion-radio-group>
                     </ion-list>
 
-                    <!-- Add the submit button here -->
                     <ion-button type="submit" expand="full">Submit</ion-button>
                 </ion-form>
             </ion-col>
