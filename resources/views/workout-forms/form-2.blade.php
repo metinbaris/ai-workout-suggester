@@ -1,21 +1,21 @@
 <ion-form id="form-two" class="workout-form" hidden>
     <!-- Height Input -->
     <ion-item>
-        <ion-label position="floating" required>Height (cm)</ion-label>
+        <ion-label position="floating" required>Height (cm)*</ion-label>
         <ion-input id="height" name="height" type="number" placeholder="Enter your height"></ion-input>
     </ion-item>
 
     <!-- Weight Input -->
     <ion-item>
-        <ion-label position="floating" required>Weight (kg)</ion-label>
+        <ion-label position="floating" required>Weight (kg)*</ion-label>
         <ion-input id="weight" name="weight" type="number" placeholder="Enter your weight"></ion-input>
     </ion-item>
 
-    <!-- Weekly Exercise Amount -->
+    <!-- Current Weekly Exercise Amount -->
     <ion-list>
         <ion-radio-group>
             <ion-list-header>
-                <ion-label>Weekly Exercise Amount</ion-label>
+                <ion-label>Current Weekly Exercise Frequency*</ion-label>
             </ion-list-header>
 
             <ion-item>
