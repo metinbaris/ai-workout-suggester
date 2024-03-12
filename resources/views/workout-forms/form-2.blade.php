@@ -11,7 +11,7 @@
         <ion-input id="weight" name="weight" type="number" placeholder="Enter your weight"></ion-input>
     </ion-item>
 
-    <!-- Current Weekly Exercise Amount -->
+    <!-- Current Weekly Exercise Frequency -->
     <ion-list>
         <ion-radio-group>
             <ion-list-header>
