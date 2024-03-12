@@ -1,49 +1,50 @@
 class WorkoutForm {
     constructor() {
-        this.nextButton = document.getElementById('form-one-btn');
-        this.backButton = document.getElementById('form-back-btn');
-
-        this.addEventListeners();
+        this.nextButton = document.getElementById('form-one-btn')
+        this.backButton = document.getElementById('form-back-btn')
+        if (this.nextButton instanceof Element) {
+            this.addEventListeners()
+        }
     }
 
     addEventListeners() {
-        this.nextButton.addEventListener('click', () => this.showSecondForm());
-        this.backButton.addEventListener('click', () => this.toggleForm());
+        this.nextButton.addEventListener('click', () => this.showSecondForm())
+        this.backButton.addEventListener('click', () => this.toggleForm())
     }
 
     toggleForm() {
-        const formOne = document.getElementById('form-one');
-        const formTwo = document.getElementById('form-two');
+        const formOne = document.getElementById('form-one')
+        const formTwo = document.getElementById('form-two')
 
-        formOne?.toggleAttribute('hidden');
-        formTwo?.toggleAttribute('hidden');
+        formOne?.toggleAttribute('hidden')
+        formTwo?.toggleAttribute('hidden')
     }
 
     validateFirstForm() {
-        const ageInput = document.getElementById('age');
-        const age = parseInt(ageInput.value);
+        const ageInput = document.getElementById('age')
+        const age = parseInt(ageInput.value)
 
         if (isNaN(age) || age < 18 || age > 90) {
-            alert('Invalid age. Please enter a number between 18 and 90.');
-            return false;
+            alert('Invalid age. Please enter a number between 18 and 90.')
+            return false
         }
 
-        const gender = document.getElementById('gender').value;
+        const gender = document.getElementById('gender').value
         if (!gender) {
-            alert('Please select your gender.');
-            return false;
+            alert('Please select your gender.')
+            return false
         }
 
-        return true;
+        return true
     }
 
     showSecondForm() {
-        const isFirstFormValid = this.validateFirstForm();
+        const isFirstFormValid = this.validateFirstForm()
 
         if (isFirstFormValid) {
-            this.toggleForm();
+            this.toggleForm()
         }
     }
 }
 
-new WorkoutForm();
+new WorkoutForm()
