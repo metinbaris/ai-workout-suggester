@@ -15,8 +15,8 @@
     <ion-grid>
         <ion-row>
             <ion-col size-md="6" offset-md="3">
-                @include('forms/form-1')
-                @include('forms/form-2')
+                @include('workout-forms/form-1')
+                @include('workout-forms/form-2')
             </ion-col>
         </ion-row>
     </ion-grid>

@@ -1,2 +1,2 @@
 import './bootstrap';
-import './forms';
+import './workout-form';
