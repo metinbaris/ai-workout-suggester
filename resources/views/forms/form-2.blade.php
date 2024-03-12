@@ -1,4 +1,4 @@
-<ion-form id="form-two" hidden>
+<ion-form id="form-two" class="workout-form" hidden>
     <!-- Height Input -->
     <ion-item>
         <ion-label position="floating" required>Height (cm)</ion-label>

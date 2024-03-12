@@ -1,8 +1,8 @@
-<ion-form id="form-one">
+<ion-form id="form-one" class="workout-form">
     <!-- Age Input -->
     <ion-item>
         <ion-label position="floating" required>Age</ion-label>
-        <ion-input type="number" placeholder="Enter your age"></ion-input>
+        <ion-input type="number" placeholder="Enter your age" required></ion-input>
     </ion-item>
 
     <!-- Gender Input -->

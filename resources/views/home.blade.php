@@ -1,4 +1,8 @@
 @extends('base')
+@section('css')
+    @vite(['resources/css/workout-form.css'])
+@endsection
+
 @section('content')
 
 <ion-header>
