@@ -12,104 +12,36 @@
 </ion-header>
 
 <ion-content>
-<div class="table-container">
-    <table>
-        <thead>
-        <tr>
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th>
-            <th>Saturday</th>
-            <th>Sunday</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>Monday Results</td>
-            <td>Tuesday Results</td>
-            <td>Wednesday Results</td>
-            <td>Thursday Results</td>
-            <td>Friday Results</td>
-            <td>Saturday Results</td>
-            <td>Sunday Results</td>
-        </tr>
-
-        <tr>
-            <td>Monday Results</td>
-            <td>Tuesday Results</td>
-            <td>Wednesday Results</td>
-            <td>Thursday Results</td>
-            <td>Friday Results</td>
-            <td>Saturday Results</td>
-            <td>Sunday Results</td>
-        </tr>
-
-        <tr>
-            <td>Monday Results</td>
-            <td>Tuesday Results</td>
-            <td>Wednesday Results</td>
-            <td>Thursday Results</td>
-            <td>Friday Results</td>
-            <td>Saturday Results</td>
-            <td>Sunday Results</td>
-        </tr>
-
-        <tr>
-            <td>Monday Results</td>
-            <td>Tuesday Results</td>
-            <td>Wednesday Results</td>
-            <td>Thursday Results</td>
-            <td>Friday Results</td>
-            <td>Saturday Results</td>
-            <td>Sunday Results</td>
-        </tr>
-
-        <tr>
-            <td>Monday Results</td>
-            <td>Tuesday Results</td>
-            <td>Wednesday Results</td>
-            <td>Thursday Results</td>
-            <td>Friday Results</td>
-            <td>Saturday Results</td>
-            <td>Sunday Results</td>
-        </tr>
-
-        <tr>
-            <td>Monday Results</td>
-            <td>Tuesday Results</td>
-            <td>Wednesday Results</td>
-            <td>Thursday Results</td>
-            <td>Friday Results</td>
-            <td>Saturday Results</td>
-            <td>Sunday Results</td>
-        </tr>
-
-        <tr>
-            <td>Monday Results</td>
-            <td>Tuesday Results</td>
-            <td>Wednesday Results</td>
-            <td>Thursday Results</td>
-            <td>Friday Results</td>
-            <td>Saturday Results</td>
-            <td>Sunday Results</td>
-        </tr>
-
-
-        <tr>
-            <td>Monday Results</td>
-            <td>Tuesday Results</td>
-            <td>Wednesday Results</td>
-            <td>Thursday Results</td>
-            <td>Friday Results</td>
-            <td>Saturday Results</td>
-            <td>Sunday Results</td>
-        </tr>
-
-        </tbody>
-    </table>
-</div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    @foreach($results as $day => $workout)
+                        <th>{{ $day }}</th>
+                    @endforeach
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    @foreach($results as $day => $workout)
+                        <td class="workout-title">{{ $workout->ExerciseTitle }}</td>
+                    @endforeach
+                </tr>
+                <tr>
+                @foreach($results as $day => $workout)
+                    <td>
+                        @foreach($workout->WarmUp as $warmup)
+                            <li>{{ $warmup->Name }} <span class="description">{{ $warmup->Description}} Warmup</span></li>
+                        @endforeach
+                        @foreach($workout->MainExercises as $exercise)
+                            <li>{{ $exercise->Name }} <span class="description">{{ $exercise->Description}}</span></li>
+                        @endforeach
+                    </td>
+                @endforeach
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </ion-content>
 
 @endsection
