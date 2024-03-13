@@ -27,7 +27,11 @@ class WorkoutController extends Controller
             - Weekly activity level: $amount days per week
             - Primary fitness goal: $goal
             
-            Please provide a weekly workout plan in JSON format based on the given information. You can structure it according to your expertise, tailored to the user's needs and preferences. Here's a sample JSON structure for reference: $sampleReturn";
+            Here's a sample JSON structure $sampleReturn
+            Please provide a unique weekly workout plan in JSON format on the given information. 
+            Be sure you changed every part of given sample return like rest days or spots of activities.
+            You can re-structure it according to your expertise, tailored to the user's needs and preferences.";
+            
 
         $response = Http::withToken(env('OPEN_AI_SECRET'))
             ->post('https://api.openai.com/v1/chat/completions', [
