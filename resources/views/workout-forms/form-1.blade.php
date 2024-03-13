@@ -22,7 +22,7 @@
             </ion-list-header>
 
             <ion-item>
-                <ion-label>Dont Know Yet</ion-label>
+                <ion-label>General fitness</ion-label>
                 <ion-radio id="workout-goal-0" name="goal" slot="start" value="General fitness improvement"></ion-radio>
             </ion-item>
 
