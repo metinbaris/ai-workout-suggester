@@ -20,7 +20,7 @@
 
             <ion-item>
                 <ion-label>None</ion-label>
-                <ion-radio id="workout-amount-0" name="workout-amount" slot="start" value="none"></ion-radio>
+                <ion-radio id="workout-amount-0" name="workout-amount" slot="start" value="0"></ion-radio>
             </ion-item>
 
             <ion-item>
