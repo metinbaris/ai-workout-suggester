@@ -1,0 +1,164 @@
+{
+    "Monday": {
+        "ExerciseTitle": "Full Body Strength Training",
+        "WarmUp": [
+            {
+                "Name": "Jumping Jacks",
+                "Description": "3 sets x 30 seconds"
+            }
+        ],
+        "MainExercises": [
+            {
+                "Name": "Squats",
+                "Description": "4 sets x 12 reps"
+            },
+            {
+                "Name": "Chest Press",
+                "Description": "3 sets x 10 reps"
+            },
+            {
+                "Name": "Bent Over Rows",
+                "Description": "3 sets x 12 reps"
+            },
+            {
+                "Name": "Shoulder Press",
+                "Description": "3 sets x 12 reps"
+            },
+            {
+                "Name": "Plank",
+                "Description": "3 sets x 45 seconds"
+            }
+        ]
+    },
+    "Tuesday": {
+        "ExerciseTitle": "Cardio and Core",
+        "WarmUp": [
+            {
+                "Name": "Jogging in place",
+                "Description": "3 sets x 1 minute"
+            }
+        ],
+        "MainExercises": [
+            {
+                "Name": "HIIT Workout",
+                "Description": "20 minutes"
+            },
+            {
+                "Name": "Russian Twists",
+                "Description": "3 sets x 20 reps per side"
+            },
+            {
+                "Name": "Leg Raises",
+                "Description": "3 sets x 15 reps"
+            },
+            {
+                "Name": "Mountain Climbers",
+                "Description": "3 sets x 20 reps per side"
+            }
+        ]
+    },
+    "Wednesday": {
+        "ExerciseTitle": "Upper Body Strength",
+        "WarmUp": [
+            {
+                "Name": "Arm Circles",
+                "Description": "3 sets x 20 seconds"
+            }
+        ],
+        "MainExercises": [
+            {
+                "Name": "Push-ups",
+                "Description": "4 sets x 12 reps"
+            },
+            {
+                "Name": "Pull-ups",
+                "Description": "3 sets x 8 reps"
+            },
+            {
+                "Name": "Bicep Curls",
+                "Description": "3 sets x 12 reps"
+            },
+            {
+                "Name": "Tricep Dips",
+                "Description": "3 sets x 12 reps"
+            },
+            {
+                "Name": "Plank",
+                "Description": "3 sets x 45 seconds"
+            }
+        ]
+    },
+    "Thursday": {
+        "ExerciseTitle": "Lower Body and Abs",
+        "WarmUp": [
+            {
+                "Name": "High Knees",
+                "Description": "3 sets x 30 seconds"
+            }
+        ],
+        "MainExercises": [
+            {
+                "Name": "Deadlifts",
+                "Description": "4 sets x 10 reps"
+            },
+            {
+                "Name": "Lunges",
+                "Description": "3 sets x 12 reps per leg"
+            },
+            {
+                "Name": "Russian Twists",
+                "Description": "3 sets x 20 reps per side"
+            },
+            {
+                "Name": "Leg Raises",
+                "Description": "3 sets x 15 reps"
+            }
+        ]
+    },
+    "Friday": {
+        "ExerciseTitle": "Full Body Circuit",
+        "WarmUp": [
+            {
+                "Name": "Butt Kicks",
+                "Description": "3 sets x 30 seconds"
+            }
+        ],
+        "MainExercises": [
+            {
+                "Name": "Burpees",
+                "Description": "4 sets x 15 reps"
+            },
+            {
+                "Name": "Dumbbell Thrusters",
+                "Description": "3 sets x 12 reps"
+            },
+            {
+                "Name": "Renegade Rows",
+                "Description": "3 sets x 10 reps per arm"
+            },
+            {
+                "Name": "Plank Jacks",
+                "Description": "3 sets x 20 reps"
+            }
+        ]
+    },
+    "Saturday": {
+        "ExerciseTitle": "Active Recovery",
+        "WarmUp": [],
+        "MainExercises": [
+            {
+                "Name": "Yoga or Stretching",
+                "Description": "30 minutes"
+            },
+            {
+                "Name": "Light Walk or Bike Ride",
+                "Description": "30 minutes"
+            }
+        ]
+    },
+    "Sunday": {
+        "ExerciseTitle": "Rest Day",
+        "WarmUp": [],
+        "MainExercises": []
+    }
+}
