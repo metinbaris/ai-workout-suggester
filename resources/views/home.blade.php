@@ -15,7 +15,7 @@
     <ion-grid>
         <ion-row>
             <ion-col size-md="6" offset-md="3">
-                <form method="post">
+                <form id="workout-form" method="post">
                     @csrf
                     @include('workout-forms/form-1')
                     @include('workout-forms/form-2')

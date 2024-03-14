@@ -45,7 +45,7 @@
             <ion-button id="form-back-btn" type="button" expand="full" color="light">Back</ion-button>
         </ion-col>
         <ion-col size="6">
-            <ion-button id="submit-btn" type="submit" expand="full">Submit</ion-button>
+            <ion-button id="submit-btn" type="button" expand="full">Submit</ion-button>
         </ion-col>
     </ion-row>
     

@@ -2,6 +2,8 @@ class WorkoutForm {
     constructor() {
         this.nextButton = document.getElementById('form-one-btn')
         this.backButton = document.getElementById('form-back-btn')
+        this.submitButton = document.getElementById('submit-btn')
+        this.form = document.getElementById('workout-form')
         if (this.nextButton instanceof Element) {
             this.addEventListeners()
         }
@@ -10,6 +12,7 @@ class WorkoutForm {
     addEventListeners() {
         this.nextButton.addEventListener('click', () => this.showSecondForm())
         this.backButton.addEventListener('click', () => this.toggleForm())
+        this.submitButton.addEventListener('click', () => this.submitForm())
     }
 
     toggleForm() {
@@ -38,11 +41,44 @@ class WorkoutForm {
         return true
     }
 
+    validateSecondForm() {
+        const heightInput = document.getElementById('height')
+        const height = parseInt(heightInput.value)
+
+        if (isNaN(height)) {
+            alert('Please enter height.')
+            return false
+        }
+
+        const weightInput = document.getElementById('weight')
+        const weight = parseInt(weightInput.value)
+
+        if (isNaN(weight)) {
+            alert('Please enter weight.')
+            return false
+        }
+
+        const amountChecked = document.querySelector('[name="workout-amount"][aria-checked="true"]');
+        if (amountChecked instanceof Element === false) {
+            alert('Please select current weekly exercise frequency.')
+            return false
+        }
+
+        return true
+    }
+
     showSecondForm() {
         const isFirstFormValid = this.validateFirstForm()
 
         if (isFirstFormValid) {
             this.toggleForm()
+        }
+    }
+
+    submitForm() {
+        if (this.validateSecondForm()) {
+            this.submitButton.disabled = true
+            this.form.submit()
         }
     }
 }
