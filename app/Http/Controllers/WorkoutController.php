@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Http\Requests\WorkoutRequest;
 use Illuminate\Support\Facades\Http;
 
 class WorkoutController extends Controller
 {
-    public function suggestWorkout(Request $request)
+    public function suggestWorkout(WorkoutRequest $request)
     {
         $age = $request->get('age');
         $gender = $request->get('gender');
