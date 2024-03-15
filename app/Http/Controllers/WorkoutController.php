@@ -15,6 +15,12 @@ class WorkoutController extends Controller
         $this->suggestionAIService = $suggestionAIService;
     }
 
+    public function home() {
+        session()->remove('sampleReturn');
+
+        return view('home');
+    }
+
     public function suggestWorkout(WorkoutRequest $request)
     {
         session([
