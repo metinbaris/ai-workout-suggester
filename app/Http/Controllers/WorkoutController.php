@@ -39,6 +39,7 @@ class WorkoutController extends Controller
     public function refreshSuggestion(Request $request)
     {
         $results = $this->suggestionAIService->getAIResults();
+        session()->put('sampleReturn', $results);
     
         return view('results', ['results' => json_decode($results)]);
     }
