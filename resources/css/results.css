@@ -4,6 +4,10 @@
     margin: 0 auto;
 }
 
+.table-container ion-button {
+    --border-radius: none;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;

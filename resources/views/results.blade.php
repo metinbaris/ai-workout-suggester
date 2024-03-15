@@ -41,7 +41,23 @@
             </tr>
             </tbody>
         </table>
+
+        <ion-row class="ion-justify-content-center">
+            <ion-col size="auto">
+                <ion-button id="start-new-form-btn" type="button" expand="block" color="light">Start New Form</ion-button>
+            </ion-col>
+            <ion-col size="auto">
+                <form id="refresh-suggestion-form" method="post" action="/refresh-suggestion">
+                    @csrf
+                    <ion-button id="refresh-suggestion-btn" type="button" expand="block">Refresh Suggestion</ion-button>
+                </form>
+            </ion-col>
+        </ion-row>
     </div>
 </ion-content>
 
+@endsection
+
+@section('js')
+    @vite(['resources/js/results.js'])
 @endsection

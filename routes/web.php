@@ -5,3 +5,4 @@ use App\Http\Controllers\WorkoutController;
 
 Route::get('/', function () { return view('home'); });
 Route::post('/', [WorkoutController::class, 'suggestWorkout']);
+Route::post('/refresh-suggestion', [WorkoutController::class, 'refreshSuggestion']);

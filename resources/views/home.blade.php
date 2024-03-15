@@ -26,3 +26,7 @@
 </ion-content>
 
 @endsection
+
+@section('js')
+    @vite(['resources/js/workout-form.js'])
+@endsection
