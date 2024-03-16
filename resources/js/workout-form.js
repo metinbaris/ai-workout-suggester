@@ -1,8 +1,8 @@
-import IonValidation from './ion-validation.js';
+import IonValidation from './ion-validation.js'
 
 class WorkoutForm {
     constructor(IonValidation) {
-        this.IonValidation = IonValidation;
+        this.IonValidation = IonValidation
         this.nextButton = document.getElementById('form-one-btn')
         this.backButton = document.getElementById('form-back-btn')
         this.submitButton = document.getElementById('submit-btn')
@@ -62,7 +62,7 @@ class WorkoutForm {
             return false
         }
 
-        const amountChecked = document.querySelector('[name="workout-amount"][aria-checked="true"]');
+        const amountChecked = document.querySelector('[name="workout-amount"][aria-checked="true"]')
         if (amountChecked instanceof Element === false) {
             this.IonValidation.alert('Please select current weekly exercise frequency.')
             return false
