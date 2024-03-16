@@ -1,9 +1,13 @@
+import IonValidation from './ion-validation.js';
+
 class WorkoutForm {
-    constructor() {
+    constructor(IonValidation) {
+        this.IonValidation = IonValidation;
         this.nextButton = document.getElementById('form-one-btn')
         this.backButton = document.getElementById('form-back-btn')
         this.submitButton = document.getElementById('submit-btn')
         this.form = document.getElementById('workout-form')
+
         if (this.nextButton instanceof Element) {
             this.addEventListeners()
         }
@@ -28,13 +32,13 @@ class WorkoutForm {
         const age = parseInt(ageInput.value)
 
         if (isNaN(age) || age < 18 || age > 90) {
-            alert('Invalid age. Please enter a number between 18 and 90.')
+            this.IonValidation.alert('Invalid age. Please enter a number between 18 and 90.')
             return false
         }
 
         const gender = document.getElementById('gender').value
         if (!gender) {
-            alert('Please select your gender.')
+            this.IonValidation.alert('Please select your gender.')
             return false
         }
 
@@ -46,7 +50,7 @@ class WorkoutForm {
         const height = parseInt(heightInput.value)
 
         if (isNaN(height)) {
-            alert('Please enter height.')
+            this.IonValidation.alert('Please enter height.')
             return false
         }
 
@@ -54,13 +58,13 @@ class WorkoutForm {
         const weight = parseInt(weightInput.value)
 
         if (isNaN(weight)) {
-            alert('Please enter weight.')
+            this.IonValidation.alert('Please enter weight.')
             return false
         }
 
         const amountChecked = document.querySelector('[name="workout-amount"][aria-checked="true"]');
         if (amountChecked instanceof Element === false) {
-            alert('Please select current weekly exercise frequency.')
+            this.IonValidation.alert('Please select current weekly exercise frequency.')
             return false
         }
 
@@ -83,4 +87,5 @@ class WorkoutForm {
     }
 }
 
-new WorkoutForm()
+const ionInovation = new IonValidation()
+new WorkoutForm(ionInovation)
