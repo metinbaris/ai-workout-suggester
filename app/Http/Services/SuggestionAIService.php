@@ -31,6 +31,7 @@ class SuggestionAIService {
 
 
         $response = Http::withToken(env('OPEN_AI_SECRET'))
+            ->timeout(30)
             ->post('https://api.openai.com/v1/chat/completions', [
                 "model" => "gpt-3.5-turbo",
                 "messages" => [
