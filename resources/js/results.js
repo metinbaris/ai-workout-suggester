@@ -17,6 +17,7 @@ class Results {
 
     refreshSuggestion() {
         this.refreshBtn.disabled = true
+        this.refreshBtn.innerHTML = '<ion-spinner name="dots"></ion-spinner>'
         this.refreshForm.submit()
     }
 }

@@ -82,6 +82,8 @@ class WorkoutForm {
     submitForm() {
         if (this.validateSecondForm()) {
             this.submitButton.disabled = true
+            this.backButton.disabled = true
+            this.submitButton.innerHTML = '<ion-spinner name="dots"></ion-spinner>'
             this.form.submit()
         }
     }

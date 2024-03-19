@@ -41,19 +41,19 @@
             </tr>
             </tbody>
         </table>
-
-        <ion-row class="ion-justify-content-center">
-            <ion-col size="auto">
-                <ion-button id="start-new-form-btn" type="button" expand="block" color="light">Start New Form</ion-button>
-            </ion-col>
-            <ion-col size="auto">
-                <form id="refresh-suggestion-form" method="post" action="/refresh-suggestion">
-                    @csrf
-                    <ion-button id="refresh-suggestion-btn" type="button" expand="block">Refresh Suggestion</ion-button>
-                </form>
-            </ion-col>
-        </ion-row>
     </div>
+   
+    <ion-row>
+        <ion-col size="3" offset="3">
+            <ion-button id="start-new-form-btn" type="button" expand="full" color="light">Start New</ion-button>
+        </ion-col>
+        <ion-col size="3">
+            <form id="refresh-suggestion-form" method="post" action="/refresh-suggestion">
+                @csrf
+                <ion-button id="refresh-suggestion-btn" type="button" expand="full">Refresh</ion-button>
+            </form>
+        </ion-col>
+    <ion-row>
 </ion-content>
 
 @endsection
